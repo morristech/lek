@@ -1,7 +1,7 @@
 package com.stavro_xhardha.lek.network
 
 import com.stavro_xhardha.lek.CURRENCY_ACCESS_TOKEN_KEY
-import com.stavro_xhardha.lek.model.Currency
+import com.stavro_xhardha.lek.model.networkmodels.Currency
 import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.Query
