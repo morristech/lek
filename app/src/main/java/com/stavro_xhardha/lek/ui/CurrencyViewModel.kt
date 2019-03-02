@@ -19,15 +19,10 @@ class CurrencyViewModel : BaseViewModel() {
 
     private fun loadCurrencies() {
         GlobalScope.launch {
-            val request = currencyApi.getLatestCurrencies(CURRENCY_ACCESS_TOKEN)
+            val request = currencyApi.getLatestCurrenciesAsync(CURRENCY_ACCESS_TOKEN)
             try {
                 val response = request.await()
-                val beni = response.rates!!.uSD
-                Log.d("beni", beni.toString())
                 Log.d("beni", response.success.toString())
-                Log.d("beni", response.timestamp.toString())
-                Log.d("beni", response.date)
-                Log.d("beni", response.base)
             } catch (e: HttpException) {
                 e.printStackTrace()
             } catch (e: Throwable) {

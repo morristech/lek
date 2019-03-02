@@ -14,14 +14,14 @@ object NetworkModule {
     @Provides
     @Reusable
     @JvmStatic
-    internal fun provideCurrencyApi(retrofit: Retrofit): CurrencyApi {
+    fun provideCurrencyApi(retrofit: Retrofit): CurrencyApi {
         return retrofit.create(CurrencyApi::class.java)
     }
 
     @Provides
     @Reusable
     @JvmStatic
-    internal fun provideCurrencyRetrofitInstance(): Retrofit {
+    fun provideCurrencyRetrofitInstance(): Retrofit {
         return Retrofit.Builder()
             .baseUrl(CURRENCY_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())

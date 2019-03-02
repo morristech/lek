@@ -8,5 +8,5 @@ import retrofit2.http.Query
 
 interface CurrencyApi {
     @GET("latest")
-    fun getLatestCurrencies(@Query(CURRENCY_ACCESS_TOKEN_KEY) token: String): Deferred<Currency>
+    fun getLatestCurrenciesAsync(@Query(CURRENCY_ACCESS_TOKEN_KEY) token: String): Deferred<Currency>
 }
