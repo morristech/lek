@@ -2,6 +2,7 @@ package com.stavro_xhardha.lek.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.stavro_xhardha.lek.R
 import com.stavro_xhardha.lek.ui.history.HistoryFragment
@@ -10,10 +11,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var viewmodel: CurrencyViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        viewmodel = ViewModelProviders.of(this).get(CurrencyViewModel::class.java)
         openHomeFragment()
     }
 

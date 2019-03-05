@@ -1,7 +1,6 @@
 package com.stavro_xhardha.lek.ui.home
 
-import androidx.lifecycle.ViewModel;
+import com.stavro_xhardha.lek.base.BaseViewModel
 
-class HomeViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class HomeViewModel : BaseViewModel() {
 }
