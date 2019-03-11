@@ -1,4 +1,4 @@
-package com.stavro_xhardha.lek.ui
+package com.stavro_xhardha.lek.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        viewmodel = ViewModelProviders.of(this).get(CurrencyViewModel::class.java)
+        //viewmodel = ViewModelProviders.of(this).get(CurrencyViewModel::class.java)
         openHomeFragment()
     }
 

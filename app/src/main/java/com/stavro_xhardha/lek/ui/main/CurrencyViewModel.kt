@@ -1,4 +1,4 @@
-package com.stavro_xhardha.lek.ui
+package com.stavro_xhardha.lek.ui.main
 
 import android.util.Log
 import com.stavro_xhardha.lek.COUNTRIES_BASE_URL

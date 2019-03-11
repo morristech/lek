@@ -1,6 +1,8 @@
 package com.stavro_xhardha.lek.ui.home
 
-import com.stavro_xhardha.lek.base.BaseViewModel
+import androidx.lifecycle.ViewModel
+import com.stavro_xhardha.lek.repository.CurrencyRepository
 
-class HomeViewModel : BaseViewModel() {
+class HomeViewModel(repository: CurrencyRepository) : ViewModel() {
+
 }
