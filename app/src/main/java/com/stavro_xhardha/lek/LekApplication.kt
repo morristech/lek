@@ -12,6 +12,5 @@ class LekApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         appcomponent = DaggerLekAppComponent.builder().appContextModule(AppContextModule(this)).build()
-        appcomponent.inject(this)
     }
 }
