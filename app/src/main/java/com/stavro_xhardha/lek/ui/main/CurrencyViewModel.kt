@@ -19,7 +19,7 @@ class CurrencyViewModel : BaseViewModel() {
     //todo Inject Repository :)
 
     init {
-        loadCurrencies()
+        //loadCurrencies()
     }
 
     private fun loadCurrencies() {

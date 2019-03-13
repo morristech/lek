@@ -8,7 +8,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module(includes = [AppContextModule::class])
-object DatabaseModule {
+class DatabaseModule {
 
     @Provides
     @AppScope

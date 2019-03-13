@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        //viewmodel = ViewModelProviders.of(this).get(CurrencyViewModel::class.java)
         openHomeFragment()
     }
 

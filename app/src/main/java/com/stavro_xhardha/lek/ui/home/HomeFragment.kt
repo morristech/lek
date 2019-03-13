@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import com.stavro_xhardha.lek.LekApplication
 import com.stavro_xhardha.lek.R
 import javax.inject.Inject
 
@@ -31,7 +32,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun performDependencyInjection() {
-        DaggerHomeComponent.builder().build().inject(this)
+        DaggerHomeComponent.builder().lekAppComponent(LekApplication.instance(this.activity!!)
+            .getAppComponent()).build().inject(this)
     }
 
 }

@@ -8,6 +8,7 @@ import androidx.room.PrimaryKey
 data class LatestCurrency(
 
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     val id: Int,
 
     @ColumnInfo(name = "currency_code")
@@ -24,5 +25,8 @@ data class LatestCurrency(
     val rating: Double,
 
     @ColumnInfo(name = "base_currency")
-    val base: String
+    val base: String,
+
+    @ColumnInfo(name = "symbol")
+    val symbol: String
 )
